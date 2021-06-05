@@ -5,30 +5,25 @@ notitle: true
 
 # groups of columns of {roles: list, width: num, image: bool}
 role-tables:
-- - roles: [faculty, postdoc, staff]
+- - roles: [present]
     width: 4
     image: true
-  - roles: [grad]
+  - roles: [past]
     width: 8
     image: true
-- - roles: [collab, ugrad, ugrad-alum]
-    width: 5
-    image: false
-  - roles: [alum]
-    width: 7
-    image: false
-
 ---
 
 <div class="jumbotron">
     <p>
-        The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-        research. Here is a place where we tell you exactly what that is!
+        <b>Humans Learning Machine Learning</b> are a group of physics trainees
+         at the University of Toronto using the powers of machine learning,
+         statistics, and high performance computing to tackle interesting and
+         fun problems.
     </p>
 </div>
 
 <section>
-    <h2>News</h2>
+    <h2>Meetings</h2>
     <ul class="news list-unstyled">
         {% for post in site.posts limit: site.front_page_news %}
             {% include news-item.html item=post %}
