@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: meeting
 title: "A Full Blog Post"
 icon: star-o
 ---

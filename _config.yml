@@ -15,7 +15,7 @@ roles:
     name: Present Members
   - key: past
     name: Past Members
-  - key: speakers
+  - key: speaker
     name: Invited Speakers
 
 # Number of news stories on the front page.
@@ -38,8 +38,8 @@ navigation:
   - title: Projects
     link: /projects.html
   - title: Meetings
-    link: /meetings.html
+    link: /agenda.html
   - title: People
-    link: /#people
+    link: /people.html
   - title: Code
     link: /code.html

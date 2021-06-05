@@ -1,0 +1,10 @@
+---
+layout: default
+title: Meetings
+---
+
+<ul class="news list-unstyled">
+{% for meeting in site.meetings %}
+    {% include news-item.html item=meeting %}
+{% endfor %}
+</ul>

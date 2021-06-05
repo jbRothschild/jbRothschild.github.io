@@ -10,7 +10,7 @@ role-tables:
     image: true
   - roles: [past]
     width: 8
-    image: true
+    image: false
 ---
 
 <div class="jumbotron">
@@ -23,23 +23,23 @@ role-tables:
 </div>
 
 <section>
-    <h2>Meetings</h2>
+    <h2>Meeting</h2>
     <ul class="news list-unstyled">
-        {% for post in site.posts limit: site.front_page_news %}
-            {% include news-item.html item=post %}
+        {% for meeting in site.meetings limit: site.front_page_news %}
+            {% include news-item.html item=meeting %}
         {% endfor %}
     </ul>
-    {% assign numposts = site.posts | size %}
-    {% if numposts >= 1 %}
+    {% assign nummeetings = site.meetings | size %}
+    {% if nummeetings >= 1 %}
         <p>
             <span class="fa fa-fw fa-history"></span>
-            <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
+            <a href="{{ site.base }}/agenda.html">Past Meetings&hellip;</a>
         </p>
     {% endif %}
 </section>
 
 <section>
-    <h2>Research</h2>
+    <h2>Projects</h2>
     <div class="card-columns">
         {% comment %}
         Sort the projects by date, putting those without dates last
@@ -59,7 +59,7 @@ role-tables:
     {% for role-table in page.role-tables %}
         <section class="people row justify-content-between">
             {% for role-column in role-table %}
-                <div class="col-md-{{ role-column.width }}">
+                <div class="col-md-{{ role-column.width }}" data-columns="4">
                     {% for role in role-column.roles %}
                         {% include role-people.html role=role image=role-column.image %}
                     {% endfor %}

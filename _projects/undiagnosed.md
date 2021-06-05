@@ -1,19 +1,22 @@
 ---
-title: Logo Project
+title: Undiagnosed
 
-notitle: true
 
 description: |
   This project has a sweet logo!
 
 people:
-  - storm
-  - grad-b
-  - ugrad-c
+  - jeremy
+  - matt
+  - duncan
+  - liam
+  - eugene
+  - chris
+  - sam
 
 layout: project
-image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Xmencomic-logo.svg/2000px-Xmencomic-logo.svg.png"
-last-updated: 2017-04-11
+#image:
+last-updated: 2019-06-11
 ---
 
 Some preliminary text.
